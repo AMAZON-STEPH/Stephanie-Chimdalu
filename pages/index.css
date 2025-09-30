@@ -1,0 +1,26 @@
+*{
+  font-family:Source Code Pro;
+  scrollbar-width: none;
+}
+
+@keyframes wave {
+  0% { transform: rotate(-40deg); }
+  20% { transform: rotate(-60deg); }
+  40% { transform: rotate(2deg); }
+  60% { transform: rotate(-40deg); }
+  80% { transform: rotate(10deg); }
+  100% { transform: rotate(-60deg); }
+}
+
+.animate-wave {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+  transform-origin: bottom center;
+}
+
+.show-skill {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+
