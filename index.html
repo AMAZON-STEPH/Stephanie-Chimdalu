@@ -24,7 +24,7 @@
   </div>
 </div>
 
-  <main id="portfoilo">
+  <main id="portfoilo" class="hidden">
     <div class="flex text-white">
 
     <div class="bg-gray-900 border border-blue-700/30 h-[100vh] w-[10%] lg:w-[4%] flex flex-col gap-[3em] py-6 items-center fixed top-0 bottom-0">
@@ -39,33 +39,39 @@
 
       <div class="flex flex-col gap-3">
         <a id="resume" href="assets/Resume.pdf" target="_self">
-          <i class="fas fa-file text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px]" title="my files"></i>
+          <i class="fas fa-file text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px] cursor-pointer" title="my files"></i>
         </a>
 
-       <i id="theprojects" class="fa-solid fa-screwdriver-wrench text-[20px] text-white/50 lg:text-[27px] hover:bg-black/30 p-2 rounded-[8px]" title="projects"></i>
+       <i id="theprojects" class="fa-solid fa-screwdriver-wrench text-[20px] text-white/50 lg:text-[27px] hover:bg-black/30 p-2 rounded-[8px] cursor-pointer" title="projects"></i>
 
-       <div>
-      <i id="Qualifications" class="inline-block fa-solid fa-lightbulb text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px]" title="Education/Qualifications"></i>
+       <div class="z-[9999]">
+      <i id="Qualifications" class="inline-block fa-solid fa-lightbulb text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px] cursor-pointer" title="Education/Qualifications"></i>
 
-      <div id="theQualifications" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-[9999]">
+      <div id="theQualifications" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-[9999] cursor-pointer">
         
       <div class="bg-white rounded-[8px] p-6 max-w-md w-[90%] shadow-lg">
         <div class="flex justify-between items-center mb-3">
       <h3 class="text-blue-950 text-[20px] font-[600]">Qualifications</h3>
-      <button id="closeModal" class="text-blue-950  font-bold text-[20px] font-bold hover:bg-black/10 px-4 py-1 rounded-[12px] text-[20px]">&times;</button>
+
+      <button id="closeModal" class="text-blue-950  font-bold text-[20px] font-bold hover:bg-black/10 px-4 py-1 rounded-[12px] text-[20px] cursor-pointer">&times;</button>
       </div>
 
+      <div class="flex flex-col gap-3">
       <p class="text-black text-[13px] ">I've gained practical knowledge through hands-on projects, online courses, and continuous practice. My skills include building and deploying applications with <span class="text-blue-950 font-[400]">HTML, CSS, JavaScript, React,</span> and modern frameworks - always with a focus on responsive design and performance.</p>
+
+      <a href="https://wa.me/2348163098395"><button class="bg-blue-950 px-[1em] py-[5px] rounded-[1em] flex items-center gap-1"><span class="bg-green-500 w-2 h-2 rounded-full inline-block transition-all animate-spin border-t-2 border-blue-700"></span>Let's Chat </button>  
+            </a>
+      </div>
       </div>
       </div>
      </div>
 
-      <i id="fasbolt" class="fas fa-bolt text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px]" title="my skills"></i>
+      <i id="fasbolt" class="cursor-pointer fas fa-bolt text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px]" title="my skills"></i>
 
-       <i id="thehome" class="fas fa-house-chimney text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px]" title="home"></i>
+       <i id="thehome" class="fas fa-house-chimney text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px] cursor-pointer" title="home"></i>
       </div>
 
-      <i id="settings" class="fa-solid fa-gear text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px]" title="settings"></i>
+      <i id="settings" class="fa-solid fa-gear text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px] cursor-pointer" title="settings"></i>
 
     </div>
     </div>

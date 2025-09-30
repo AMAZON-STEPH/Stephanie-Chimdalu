@@ -22,6 +22,7 @@ const loader = document.getElementById("loader")
 const Qualifications = document.getElementById("Qualifications")
 const theQualifications = document.getElementById("theQualifications")
 const closeQualification = document.getElementById("closeModal");
+const settings = document.getElementById("settings")
 
 
 hamburger.addEventListener("click", () => {
@@ -70,14 +71,17 @@ send.addEventListener("click", (e) => {
 
 thehome.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+  thehome.classList.add("text-white")
 })
 
 theprojects.addEventListener("click", () => {
   project.scrollIntoView({ behavior: "smooth" });
+  theprojects.classList.add("text-white")
 })
 
 fasbolt.addEventListener("click", () => {
   skills.scrollIntoView({ behavior: "smooth" });
+  fasbolt.classList.add("text-white")
 })
 
 function Loading() {
@@ -96,14 +100,23 @@ Loading().then(() => {
 
 Qualifications.addEventListener("click", () => {
   theQualifications.classList.remove("hidden")
+  document.body.classList.add("overflow-hidden");
+  Qualifications.classList.add("text-white")
 });
 
 closeQualification.addEventListener("click", () => {
   theQualifications.classList.add("hidden");
+  document.body.classList.remove("overflow-hidden");
 });
 
 theQualifications.addEventListener("click", (e) => {
   if (e.target === theQualifications) {
     theQualifications.classList.add("hidden");
+    document.body.classList.remove("overflow-hidden");
   }
+});
+
+settings.addEventListener("click", () => {
+  document.body.classList.remove("font-serif", "font-mono");
+  document.body.classList.add("font-sans");
 });
