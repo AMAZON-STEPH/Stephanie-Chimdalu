@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stephanie</title>
+  <meta name="author" content="Stephanie">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+  <meta property="og:title" content="Stephanie | Frontend Developer">
+  <meta property="og:description" content="Clean and modern portfolio showcasing web development projects.">
+  <meta property="og:image" content="YOUR PORTFOLIO PREVIEW IMAGE LINK HERE">
+  <meta property="og:url" content="YOUR-PORTFOLIO-URL">
+  <meta property="og:type" content="website">
+
+  <meta property="og:title" content="Stephanie | Frontend Developer">
+  <meta property="og:description" content="Clean and modern portfolio showcasing web development projects.">
+  <meta property="og:image" content="YOUR PORTFOLIO PREVIEW IMAGE LINK HERE">
+  <meta property="og:url" content="YOUR-PORTFOLIO-URL">
+  <meta property="og:type" content="website">
+
+
+  <title>Stephanie | Frontend Developer</title>
   <link rel="icon" href="/images/myimg.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./pages/index.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+  <link rel="stylesheet" href="./pages/script.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
-<body class="bg-black overflow-x-hidden">
+<body class="bg-black text-white">
 
-<div id="loader" class="fixed inset-0 flex items-center justify-center bg-black z-[9999]" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="1000">
+  <div id="loader" class="fixed inset-0 flex items-center justify-center bg-black z-[9999]" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="1000">
   <div class="relative flex items-center justify-center">
     <span class="border-t-4 border-blue-500 p-[7em] lg:p-[10em] rounded-full transition duration-[7s] ease-in-out animate-spin"></span>
     
@@ -24,154 +40,144 @@
   </div>
 </div>
 
-  <main id="portfoilo" class="hidden">
-    <div class="flex text-white">
 
-    <div class="bg-gray-900 border border-blue-700/30 h-[100vh] w-[10%] lg:w-[4%] flex flex-col gap-[3em] py-6 items-center fixed top-0 bottom-0">
+  <header class="fixed top-0 left-0 w-full bg-gray-900 shadow-md z-50">
 
-      <div id="hamburger" class="flex flex-col gap-1 w-6 cursor-pointer left-1 z-[9999] absolute lg:left-[0.5em]">
-        <span id="ham1" class="block h-[3px] rounded-[10px] w-full bg-white duration-500"></span>
-        <span id="ham2" class="block h-[3px] w-full bg-white rounded-[10px] duration-500"></span>
-        <span id="ham3" class="block h-[3px] w-full bg-white rounded-[10px] duration-500"></span>
-      </div>
+   <div class="lg:hidden flex-1 md:flex-none md:order-2 flex items-center">
 
-    <div class="flex flex-col gap-[11em] mt-[4em]">
-
-      <div class="flex flex-col gap-3">
-        <a id="resume" href="assets/Resume.pdf" target="_self">
-          <i class="fas fa-file text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px] cursor-pointer" title="my files"></i>
-        </a>
-
-       <i id="theprojects" class="fa-solid fa-screwdriver-wrench text-[20px] text-white/50 lg:text-[27px] hover:bg-black/30 p-2 rounded-[8px] cursor-pointer" title="projects"></i>
-
-       <div class="z-[9999]">
-      <i id="Qualifications" class="inline-block fa-solid fa-lightbulb text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px] cursor-pointer" title="Education/Qualifications"></i>
-
-      <div id="theQualifications" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-[9999] cursor-pointer">
-        
-      <div class="bg-white rounded-[8px] p-6 max-w-md w-[90%] shadow-lg">
-        <div class="flex justify-between items-center mb-3">
-      <h3 class="text-blue-950 text-[20px] font-[600]">Qualifications</h3>
-
-      <button id="closeModal" class="text-blue-950  font-bold text-[20px] font-bold hover:bg-black/10 px-4 py-1 rounded-[12px] text-[20px] cursor-pointer">&times;</button>
-      </div>
-
-      <div class="flex flex-col gap-3">
-      <p class="text-black text-[13px] ">I've gained practical knowledge through hands-on projects, online courses, and continuous practice. My skills include building and deploying applications with <span class="text-blue-950 font-[400]">HTML, CSS, JavaScript, React,</span> and modern frameworks - always with a focus on responsive design and performance.</p>
-
-      <a href="https://wa.me/2348163098395"><button class="bg-blue-950 px-[1em] py-[5px] rounded-[1em] flex items-center gap-1"><span class="bg-green-500 w-2 h-2 rounded-full inline-block transition-all animate-spin border-t-2 border-blue-700"></span>Let's Chat </button>  
-            </a>
-      </div>
-      </div>
-      </div>
-     </div>
-
-      <i id="fasbolt" class="cursor-pointer fas fa-bolt text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px]" title="my skills"></i>
-
-       <i id="thehome" class="fas fa-house-chimney text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px] cursor-pointer" title="home"></i>
-      </div>
-
-      <i id="settings" class="fa-solid fa-gear text-[20px] text-white/50 hover:bg-black/30 p-2 rounded-[8px] cursor-pointer" title="settings"></i>
-
-    </div>
-    </div>
-    
-
-    <div id="menu" class="bg-gray-900 border border-blue-700/30 w-[25%] lg:w-[15%] h-[100vh] flex flex-col gap-9 items-center z-40 fixed top-0 left-[2em] lg:left-[2.2em] hidden">
-
-      <ul class="flex flex-col w-[100%] mt-[2em] font-light items-center z-[9999]">
-
-        <h3 class="text-blue-500 text-[25px]">Pages</h3>
-        <a href="#about" class="gap-3 items-center flex text-[15px] hover:bg-black/30 py-2 px-[12px] transition-all duration-300 w-full">
-         <i  class="fas fa-file-code text-orange-500 mr-1"></i>About.<span class="font-bold">hl</span></a>
-
-        <a href="#skill" class="gap-3 items-center flex text-[15px] hover:bg-black/30 py-2 px-[12px] transition-all duration-300 w-full"><i  class="fas fa-file-code text-pink-600/50 mr-1"></i>Skills.<span class="text-yellow-400 font-bold">jx</span></a>
-
-         <a href="#project" class="gap-3 items-center flex text-[15px] hover:bg-black/30 py-2 px-[12px] transition-all duration-300 w-full"><i  class="fas fa-file-code text-blue-500 mr-1"></i>Projects.<span class="text-yellow-400 font-bold">jx</span></a>
-
-        <a href="#contact" class="gap-3 items-center flex text-[15px] hover:bg-black/30 py-2 px-[12px] transition-all duration-300 w-full"><i  class="fas fa-file-code text-green-500 mr-1"></i>Contact.<span class="text-yellow-400 font-bold">jx</span></a>
-
-      </ul>
-
-    <div class="flex flex-col gap-3 items-center w-full">
-          
-          <h3 class="text-blue-500 text-[25px]"><i class="fas fa-chevron"></i>Socials</h3>
-
-     <ul class="flex flex-col w-[100%] font-light gap-2">
-      
-       <a href="https://wa.me/2348163098395" class="gap-3 items-center flex text-[15px] hover:bg-black/30 py-1 px-[12px] transition-all duration-300 w-full">
-        <i class="fa-brands fa-whatsapp text-white text-[20px] rounded-[5px] "></i> whatsapp
-        </a>  
-
-        <a href="https://github.com/AMAZON-STEPH" class="gap-3 items-center flex text-[15px] hover:bg-black/30 py-1 px-[12px] transition-all duration-300 w-full">
-        <i class="fa-brands fa-github text-white text-[20px] rounded-[5px] "></i> Git hub
-        </a>
-        
-         <a href="https://www.facebook.com/profile.php?id=61561871405798" class="gap-3 items-center flex text-[15px] hover:bg-black/30 py-1 px-[12px] transition-all duration-300 w-full">
-        <i class="fa-brands fa-facebook text-white text-[20px] rounded-[5px] "></i>Facebook
-        </a>
-
-         <a href="https://x.com/stephKDfamz" class="gap-3 items-center flex text-[15px] hover:bg-black/30 py-1 px-[12px] transition-all duration-300 w-full">
-         <i class="fa-brands fa-twitter text-white  text-[20px] rounded-[5px] "></i>Twitter
-              </a>
-         
-        <a href="https://www.linkedin.com/in/stephanie-chimdalu-50395b36b?trk=contact-info" class="gap-3 items-center flex text-[15px] hover:bg-black/30 py-1 px-[12px] transition-all duration-300 w-full">
-         <i class="fa-brands fa-linkedin text-white text-[20px] rounded-[5px] "></i>LinkedIn
-        </a>
-        <a href="https://www.instagram.com/chimdalu494/" class="gap-3 items-center flex text-[15px] hover:bg-black/30 py-1 px-[12px] transition-all duration-300 w-full">
-         <i class="fa-brands fa-instagram text-white text-[20px] rounded-[5px] "></i>LinkedIn
-        </a>
-
-      </ul>
-    </div>
-    </div>
-
-    <div class="bg-black h-[5em] w-[85%] md:w-[89%] lg:w-[95%] left-[3em] md:left-[5em] lg:left-[3em] relative flex flex flex-col items-center border-b border-white/30 ">
-
-      <div class="flex px-[5px] py-[6px] items-center bg-gray-900 fixed w-[90%] md:w-[89.5%] lg:w-[95.5%]">
-
-      <div class="flex gap-1 lg:gap-2">
+     <div class="flex gap-1 lg:gap-2">
         <span class="bg-red-500 w-3 h-3 rounded-full inline-block"></span>
         <span class="bg-yellow-500 w-3 h-3 rounded-full inline-block"></span>
         <span class="bg-green-600 w-3 h-3 rounded-full inline-block"></span>
       </div>
 
-      <div class="overflow-hidden w-full relative whitespace-nowrap">
-        <p id="scroll" class=" left-0 top-0 ">Frontend Developer</p>
+      <div class="overflow-hidden w-full">
+      <div id="move" class="whitespace-nowrap text-white text-sm md:text-base animate-marquee">
+        Let's talk about your idea and transform it to a digital website
+      </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-between px-2 py-1">
+      
+      <p class="text-[12px] font-bold tracking-tight lg:tracking-wide lg:text-xl"><i class="fas fa-globe animate-spin text-blue-400"></i> Stephanie</p>
+      
+    <div class="hidden lg:inline-block overflow-hidden flex-1   md:flex-none md:order-2 flex items-center">
+
+       <div class="flex gap-1 lg:gap-2 z-40">
+        <span class="bg-red-500 w-3 h-3 rounded-full inline-block"></span>
+        <span class="bg-yellow-500 w-3 h-3 rounded-full inline-block"></span>
+        <span class="bg-green-600 w-3 h-3 rounded-full inline-block"></span>
       </div>
 
-
-      <div class="relative group">
-        <span id="tooltip" class="absolute right-3 top-[40px] scale-0 group-hover:scale-110 transition-transform bg-black z-[9999] text-white text-[10px] px-3 py-1 rounded-[10px] border border-white/10 duration-700 delay-300 z-[9999]">search portfolio - index.html - Stephanie Chimdalu</span>
-
-        <i class="fas fa-magnifying-glass text-white/80 absolute left-[2em] top-[8px] transition-all rotate-[80deg]"></i>
-
-      <input type="text" name="search" id="search" placeholder="portfoilo" class="bg-transparent text-white border border-gray-500 lg:px-10 py-[2px] rounded-[10px] placeholder:flex placeholder:text-gray-300 flex text-center">
+      <div id="move" class="whitespace-nowrap text-white text-sm md:text-base animate-marquee">
+        Let's talk about your idea and transform it to a digital website
       </div>
-
     </div>
 
-      <div class="flex md:w-[89%] lg:w-[95.5%] w-[90%] justify-around lg: lg:px-3 items-center fixed top-[2.5em] bg-black border-b border-gray-500">
-      <h2>Steph</h2>
+      <nav class="md:flex gap-4">
+
+    <div class="flex justify-around lg:px-3 items-center">
+
       <ul class="flex gap-3 lg:gap-5 text-[13px] items-center font-light pt-2">
 
-        <li class="relative after:content-[''] after:absolute after:left-0 after:-bottom-[1px] after:w-0 after:h-[2px] after:bg-white/70 after:transition-all after:duration-500 hover:after:w-full after:rounded-[5px] pb-2 hover:after:delay-300 active:after active:bg-white/10 p-1"><i  class="fas fa-file-code text-orange-500 mr-1"></i><a href="#about">About.<span class="font-bold">hl</span></a></li>
+        <li class="relative after:content-[''] after:absolute after:left-0 after:-bottom-[1px] after:w-0 after:h-[2px] after:bg-white/70 after:transition-all after:duration-500 hover:after:w-full after:rounded-[5px] pb-2 hover:after:delay-300 active:after active:bg-white/10 p-1"><i class="fas fa-file-code text-orange-500"></i><a href="#about">About.<span class="font-bold">jsx</span></a></li>
 
-       <li class="relative after:content-[''] after:absolute after:left-0 after:-bottom-[1px] after:w-0 after:h-[2px] after:bg-white/70 after:transition-all after:duration-500 hover:after:w-full after:rounded-[5px] pb-2 hover:after:delay-300 active:after "><i  class="fas fa-file-code text-pink-600/50 mr-1"></i><a href="#skill">Skills.<span class="text-yellow-400 font-bold">jx</span></a></li>
+       <li class="relative after:content-[''] after:absolute after:left-0 after:-bottom-[1px] after:w-0 after:h-[2px] after:bg-white/70 after:transition-all after:duration-500 hover:after:w-full after:rounded-[5px] pb-2 hover:after:delay-300 active:after "><i  class="fas fa-file-code text-pink-600/50 "></i><a href="#skill">Skills.<span class="text-yellow-400 font-bold">jsx</span></a></li>
 
-       <li class="relative after:content-[''] after:absolute after:left-0 after:-bottom-[1px] after:w-0 after:h-[2px] after:bg-white/70 after:transition-all after:duration-500 hover:after:w-full after:rounded-[5px] pb-2 hover:after:delay-300 active:after "><i  class="fas fa-file-code text-blue-500 mr-1"></i><a href="#project">Project.<span class="text-yellow-400 font-bold">jx</span></a></li>
+       <li class="relative after:content-[''] after:absolute after:left-0 after:-bottom-[1px] after:w-0 after:h-[2px] after:bg-white/70 after:transition-all after:duration-500 hover:after:w-full after:rounded-[5px] pb-2 hover:after:delay-300 active:after "><i  class="fas fa-file-code text-blue-500"></i><a href="#project">Project.<span class="text-yellow-400 font-bold">jsx</span></a></li>
 
-        <li class="relative after:content-[''] after:absolute after:left-0 after:-bottom-[1px] after:w-0 after:h-[2px] after:bg-white/70 after:transition-all after:duration-500 hover:after:w-full after:rounded-[5px] pb-2 hover:after:delay-300 active:after "><i class="fas fa-file-code text-green-500 mr-1"></i><a href="#contact">Contact.<span class="text-yellow-400 font-bold">jx</span></a></li>
+        <li class="relative after:content-[''] after:absolute after:left-0 after:-bottom-[1px] after:w-0 after:h-[2px] after:bg-white/70 after:transition-all after:duration-500 hover:after:w-full after:rounded-[5px] pb-2  hover:after:delay-300 active:after "><i class="fas fa-file-code text-green-500"></i><a href="#contact">Contact.<span class="text-yellow-400 font-bold">jsx</span></a></li>
       </ul>
         </div>
 
-        <div class="w-[90%] lg:w-[90%] flex flex-col lg:flex-row items-center justify-center lg:gap-[12em] relative top-[5em] -z-40">
-          <div class="flex flex-col py-[4em] gap-8 lg:w-[60%]" data-aos="fade-left">
-          <div class="flex flex-col">
-            
-            <span class="text-green-800 flex gap-2">// Hi, I'm a Frontend developer<i class="fas fa-hand transition-all animate-wave text-yellow-300 text-[35px] origin-bottom mt-[-15px]"></i> </span>
+      </nav>
+ 
+      <button id="menu-btn" class="md:hidden text-white">
+         <div id="hamburger" class="flex flex-col gap-1 w-6 cursor-pointer">
+        <span id="ham1" class="block h-[3px] rounded-[10px] w-full bg-white duration-500"></span>
+        <span id="ham2" class="block h-[3px] w-full bg-white rounded-[10px] duration-500"></span>
+        <span id="ham3" class="block h-[3px] w-full bg-white rounded-[10px] duration-500"></span>
+      </div>
+      </button>
+    </div>
+  </header>
+
+  <aside id="sidebar" class="fixed top-16 left-0 h-full w-40 lg:w-60 bg-gray-800 shadow-md transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-40">
+    <ul class="flex flex-col mt-4">
+
+      <p id="Qualifications" class="inline-block text-[18px] text-white hover:bg-black/30 py-1 px-4 rounded-[8px] cursor-pointer" title="Qualifications">Insights</p>
+
+      <li class="hide inline-block text-[18px] text-white hover:bg-black/30 py-1 px-4 rounded-[8px] cursor-pointer"><a href="#project">Projects</a></li>
+
+      <li class="inline-block text-[18px] text-white hover:bg-black/30 py-1 px-4 rounded-[8px] cursor-pointer" ><a href="../assets/Resume.pdf" target="self"> Resume</a></li>
+
+      <li class="home inline-block text-[18px] text-white hover:bg-black/30 py-1 px-4 rounded-[8px] cursor-pointer"><a href="#describe"> Home</a></li>
+    </ul>
+
+
+    <div class="flex flex-col gap- items-center w-full">
+          
+          <h3 class="text-blue-500 text-[21px]"><i class="fas fa-chevron"></i>Socials</h3>
+
+     <ul class="flex flex-col w-[100%] font-light gap-1">
+      
+       <a href="https://wa.me/2348163098395" target="self" class="gap-3 items-center flex text-[18px] text-white hover:bg-black/30 py-1 px-4 rounded-[8px] cursor-pointer transition-all duration-300 w-full">
+        <i class="fa-brands fa-whatsapp text-white text-[20px] rounded-[5px] "></i> whatsapp
+        </a>  
+
+        <a href="https://github.com/AMAZON-STEPH" target="self" class="gap-3 items-center flex text-[18px] text-white hover:bg-black/30 py-1 px-4 rounded-[8px] cursor-pointer  transition-all duration-300 w-full">
+        <i class="fa-brands fa-github text-white text-[20px] rounded-[5px] "></i> Git hub
+        </a>
+        
+         <a href="https://www.facebook.com/profile.php?id=61561871405798" target="self" class="gap-3 items-center flex text-[18px] text-white hover:bg-black/30 py-1 px-4 rounded-[8px] cursor-pointer transition-all duration-300 w-full">
+        <i class="fa-brands fa-facebook text-white text-[20px] rounded-[5px] "></i>Facebook
+        </a>
+
+         <a href="https://x.com/stephKDfamz" target="self" class="gap-3 items-center flex text-[18px] text-white hover:bg-black/30 py-1 px-4 rounded-[8px] cursor-pointer transition-all duration-300 w-full">
+         <i class="fa-brands fa-twitter text-white  text-[20px] rounded-[5px] "></i>Twitter
+              </a>
+         
+        <a href="https://www.linkedin.com/in/stephanie-chimdalu-50395b36b?trk=contact-info" target="self" class="gap-3 items-center flex text-[18px] text-white hover:bg-black/30 py-1 px-4 rounded-[8px] cursor-pointer transition-all duration-300 w-full">
+         <i class="fa-brands fa-linkedin text-white text-[20px] rounded-[5px] "></i>LinkedIn
+        </a>
+        <a href="https://www.instagram.com/code_with_steph/" target="self" class="gap-3 items-center flex text-[18px] text-white hover:bg-black/30 py-1 px-4 rounded-[8px] cursor-pointer transition-all duration-300 w-full">
+         <i class="fa-brands fa-instagram text-white text-[20px] rounded-[5px] "></i>Instagram
+        </a>
+
+      </ul>
+    </div>
+    </div>
+  </aside>
+
+<main class="pt-[7em] md:pt-28 lg:pt-20 md:ml-40 lg:ml-60 px-4">
+
+       <div>
+      <div id="theQualifications" class="fixed inset-0 hidden bg-black/40 flex items-center justify-center">
+        
+      <div class="bg-white rounded-[8px] p-6 max-w-[500px] w-[90%] mx-auto border-2 border-orange-600 h-[50vh] z-50">
+
+      <div class="flex justify-between items-center">
+      <h3 class="text-blue-950 text-[20px] font-[600]">Qualifications</h3>
+
+      <i id="closeModal" class="fas fa-remove text-blue-950 font-bold text-[20px] font-bold hover:bg-black/10 px-4 py-1 rounded-[12px] text-[20px] cursor-pointer"></i>
+      </div>
+
+      <div class="flex flex-col gap-3">
+      <p class="text-black font-[500] text-[14px] ">I've gained practical knowledge through hands-on projects, online courses, and continuous practice. My skills include building and deploying applications with <span class="text-blue-950 font-[500]">HTML, CSS, JavaScript, React,</span> and modern frameworks - always with a focus on responsive design and performance.</p>
+
+      <a href="https://wa.me/2348163098395"><button class="bg-blue-950 px-[1em] py-[5px] rounded-[1em] flex items-center gap-1"><span class="bg-green-500 w-2 h-2 rounded-full inline-block transition-all animate-spin border-t-2 border-blue-700"></span>Let's Chat </button> </a>
+      </div>
+      </div></div></div>
+
+
+      <section class="flex flex-col lg:flex-row justify-center items-center gap-[2em]">
+
+     <div id="describe" class="flex flex-col w-full items-center justify-center scroll-mt-24" data-aos="fade-right">
+      
+          <div class="flex flex-col"> 
+            <span class="text-green-800 flex gap-4">// Hi, I'm a Web Developer<i class="fas fa-hand transition-all animate-wave text-yellow-300 text-[35px] origin-bottom mt-[-15px]"></i> </span>
             <h3 class="text-blue-500 leading-[95%] text-[40px]">Explore My Creations</h3>
-            <span class="text-green-800"> < portfoilo /> </span>
+            <span class="text-green-800"> // < portfoilo /> </span>
             </div>
 
             <div>
@@ -185,115 +191,126 @@
 
              <span class="text-blue-500">Tagline : <span class="text-orange-900">"Frontend Developer"</span><span class="text-white">,</span></span>
 
-             <span class="text-blue-500">Skills : <span class="text-orange-900"><span class="text-purple-800 text-[20px]">[</span>"JavaScript", "Tailwind css", "CSS", "Html"<span class="text-purple-800 text-[20px]">]</span> </span><span class="text-white">,</span></span>
+             <span class="text-blue-500">Skills : <span class="text-orange-900"><span class="text-purple-800 text-[20px]">[</span>"React", "Nextjs", "JavaScript", "Tailwind css","<span class="text-purple-800 text-[20px]">]</span> </span><span class="text-white">,</span></span>
 
              <span class="text-blue-500">Drive : <span class="text-orange-900">"Simplyfing Tech";</span></span>
 
              <p><span class="text-yellow-500">]</span> ;</p>
             </span>
+            </div>     
+         </div>
+         </div>
 
-            </div>
-             
-            </div>
+      <div class="flex flex-col items-center" data-aos="fade-left">
+        <a href="https://wa.me/2348163098395">
+        <button class="bg-blue-950 px-[1em] py-[5px] rounded-[1em] flex items-center gap-1 mt-3 transition-all duration-300 rotate-[10deg] animate-pulse">
+        <span class="bg-green-500 w-2 h-2 rounded-full inline-block transition-all animate-spin border-t-2 border-blue-700"></span>Let's Chat</button>
+        </a>
+        <img src="/images/myimg.png" alt="myimage" class="w-[60%] lg:w-[60%] object-cover rounded-[5px] border-2 border-orange-900">
+      </div>
+  </section>
 
-            </div>
-            
-          <div data-aos="fade-left" data-aos-duration="2000" class="pl-[2em]">
-           <a href="https://wa.me/2348163098395"><button class="bg-blue-950 px-[1em] py-[5px] rounded-[1em] flex items-center gap-1 relative top-5 left-[10em] transition-all duration-300 rotate-[10deg] animate-pulse"><span class="bg-green-500 w-2 h-2 rounded-full inline-block transition-all animate-spin border-t-2 border-blue-700"></span>Let's Chat </button>  
-            </a>
-            <img src="/images/myimg.png" alt="myimage" class="w-[70%] lg:w-[60%] object-cover rounded-[5px] border-2 border-orange-900">
-          </div>
-        </div>
 
-         <section class="mt-[10em] ml-4 flex flex-col gap-[3em]">
-
-          <div id="about" data-aos="fade-left" class="scroll-mt-24">
+      <section class="grid grid-cols-1 sm:grid-cols- gap-12 mt-6">
+        
+     <div id="about" data-aos="fade-left" class="scroll-mt-24 flex flex-col text-center">
         <h2 class="text-blue-400 text-[30px] font-bold">About Me</h2>
         <h3 class="text-blue-500 text-[20px]">Frontend Developer</h3>
-      <p>As a Front-End Developer, I craft user-first websites that balance design, performance, and accessibility. My tools include HTML, CSS, JavaScript, and tailwind helping me deliver responsive, consistent, and modern digital experiences.</p>
+      <p>Front-End Web Developer | React, Next.js & Tailwind Specialist | Paystack Integration. As a Front-End Developer, I craft user-first websites that balance design, performance, and accessibility. My tools include HTML, CSS, JavaScript, and tailwind helping me deliver responsive, consistent, and modern digital experiences.</p>
       </div>
 
-      <div id="skill" class="flex flex-col gap-[2em]">
+    <div id="skill" class="flex flex-col gap-[2em] scroll-mt-24">
         
       <div class="flex flex-col lg:grid grid-cols-2 gap-4 scroll-mt-24">
-        <p data-aos="fade-right" data-aos-duration="1200" class="bg-gray-800/50 py-3 px-3 flex rounded-[20px] gap-3 items-center"><i class="fa-solid fa-check text-orange-500 text-[26px]"></i>Frontend Development</p>
+        <p data-aos="fade-right" data-aos-duration="1200" class="bg-gray-800/50 py-3 px-3 flex rounded-[20px] gap-3 items-center"><i class="fa-solid fa-check text-orange-500 text-[26px]"></i>WEB DEVELOPMENT</p>
 
-        <p data-aos="fade-left" data-aos-duration="1200"  class="bg-gray-800/50 py-3 px-3 flex gap-3 items-center rounded-[20px]"><i class="fa-solid fa-check text-orange-500 text-[26px]"></i>SEO Basics</p>
+        <p data-aos="fade-left" data-aos-duration="1200"  class="bg-gray-800/50 py-3 px-3 flex gap-3 items-center rounded-[20px]"><i class="fa-solid fa-check text-orange-500 text-[26px]"></i>SEO BASICS</p>
 
-        <p data-aos="fade-right" data-aos-duration="1200"  class="bg-gray-800/50 py-3 px-3 flex gap-3 items-center rounded-[20px]"><i class="fa-solid fa-check text-orange-500 text-[26px]"></i>Figma</p>
+        <p data-aos="fade-left" data-aos-duration="1200"  class="bg-gray-800/50 py-3 px-3 flex gap-3 items-center rounded-[20px]"><i class="fa-solid fa-check text-orange-500 text-[26px]"></i>GIT and GITHUB</p>
 
-        <p data-aos="fade-left" data-aos-duration="1200"  class="bg-gray-800/50 py-3 px-3 flex gap-3 items-center rounded-[20px]"><i class="fa-solid fa-check text-orange-500 text-[26px]"></i>Photoshop</p>
+        <p data-aos="fade-right" data-aos-duration="1200"  class="bg-gray-800/50 py-3 px-3 flex gap-3 items-center rounded-[20px]"><i class="fa-solid fa-check text-orange-500 text-[26px]"></i>FIGMA</p>
 
-        <p data-aos="fade-right" data-aos-duration="1200"  class="bg-gray-800/50 py-3 px-3 flex gap-3 items-center rounded-[20px]"><i class="fa-solid fa-check text-orange-500 text-[26px]"></i>Ms-office</p>
+        <p data-aos="fade-left" data-aos-duration="1200"  class="bg-gray-800/50 py-3 px-3 flex gap-3 items-center rounded-[20px]"><i class="fa-solid fa-check text-orange-500 text-[26px]"></i>PHOTOSHOP</p>
 
+        <p data-aos="fade-right" data-aos-duration="1200"  class="bg-gray-800/50 py-3 px-3 flex gap-3 items-center rounded-[20px]"><i class="fa-solid fa-check text-orange-500 text-[26px]"></i>MS-OFFICE</p>
+        </div>
+
+        <div class="flex flex-col gap-7">
+          <h3 class="text-blue-500 text-[25px]">Technologies i use</h3>
+        <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300" class="flex flex-wrap items-center justify-center gap-2">
+          <p data-aos="flip-right" data-aos-duration="2000" class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex gap-2 items-center justify-center whitespace-nowrap"><i class="fa-brands fa-html5 text-xl"></i> HTML</p>
+
+          <p data-aos="flip-right" data-aos-duration="2000" class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap gap-2"> <i class="fa-brands fa-css3 text-xl"></i>
+            CSS</p>
+          <p data-aos="flip-right" data-aos-duration="2000" class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap gap-2"><i class="fa-brands fa-js text-xl"></i> JavaScript</p>
+
+          <p data-aos="flip-right" data-aos-duration="2000" class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap gap-2"> <img src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" class="w-5" />
+            Tailwind</p>
+          <p data-aos="flip-left" data-aos-duration="2000" class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap gap-2"> <i class="fa-brands fa-github text-gray-200 text-xl"></i>
+             Github</p>
+          <p data-aos="flip-left" data-aos-duration="2000"  class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap gap-2">
+            <i class="fa-brands fa-react text-gray-200 text-xl"></i>
+           React</p>
+          <p data-aos="flip-left" data-aos-duration="2000"  class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap gap-2">
+            <i class="fa-brands fa-figma text-gray-200 text-xl"></i>
+            Figma</p>
+          <p data-aos="flip-left" data-aos-duration="2000"  class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap gap-2"> <i class="fa-solid fa-wand-sparkles text-xl"></i>
+           AI</p>
       </div>
-
-  <div class="flex flex-col gap-7">
-       <h3 class="text-blue-500 text-[25px]">Technologies i use</h3>
- <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300" class="flex flex-wrap items-center justify-center gap-2">
-    <p data-aos="flip-right" data-aos-duration="2000" class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap">HTML</p>
-    <p data-aos="flip-right" data-aos-duration="2000" class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap">CSS</p>
-    <p data-aos="flip-right" data-aos-duration="2000" class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap">JavaScript</p>
-    <p data-aos="flip-right" data-aos-duration="2000" class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap">Tailwind</p>
-    <p data-aos="flip-left" data-aos-duration="2000" class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap">Github</p>
-    <p data-aos="flip-left" data-aos-duration="2000"  class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap">React</p>
-    <p data-aos="flip-left" data-aos-duration="2000"  class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap">Vercel</p>
-    <p data-aos="flip-left" data-aos-duration="2000"  class="w-24 h-8 bg-blue-500 rounded-[2em] text-[10px] text-white text-center flex items-center justify-center whitespace-nowrap">AI</p>
-</div>
-
        </div>
       </div>
 
-      <div id="project" class="flex flex-col gap-3 scroll-mt-24 scroll-mt-24">
-        <h3 class="text-[30px] text-blue-400 font-bold">Projects</h3>
-        
-        <div class="flex flex-col lg:flex-row gap-9 lg:overflow-x-scroll overflow-y-hidden w-full items-center">
+ <div class="flex flex-col lg:flex-row gap-9 lg:overflow-x-scroll overflow-y-hidden w-full items-center scroll-mt-24" id="project">
 
-      <div class="rounded-[5px] border border-blue-900 bg-gray-950 flex flex-col gap-2 justify-center flex-shrink-0 w-[96%] h-[22.2em] lg:w-[50%] lg:h-[23.5em]" data-aos="fade-up" data-aos-duration="1200">
-        <img class="object-fill rounded-[5px]" src="/images/kay.png" alt="">
-         <p class="px-2 font-[500]"><span class="font-bold text-[20px]">KayyVerse Socials</span> is a responsive website designed to showcase professional virtual assistance services. It highlights core offerings such as administrative support, scheduling, and digital organization. Built with <span class="font-bold">HTML, CSS, JavaScript, and TailwindCSS</span> .</p>
-         <button class="border border-blue-900 rounded-[12px] py-1 bg-white/60 text-blue-800 text-[20px]"><a href="https://kayy-gamma.vercel.app/">Live Link</a></button>
-      </div>
+    <div class="rounded-[5px] border border-blue-900 bg-gray-950 flex flex-col gap-2 justify-center flex-shrink-0 w-[96%] h-[23em] lg:w-[50%]" data-aos="fade-up">
+      <img class="h-[12em] w-full object-cover rounded-[5px]" src="/images/kay.png" alt="">
+      <p class="px-2 font-[500]"><span class="font-bold text-[20px]">KayyVerse Socials</span> is a responsive website designed to showcase professional virtual assistance services. It highlights core offerings such as administrative support, scheduling, and digital organization. Built with <span class="font-bold">HTML, CSS, JavaScript, and TailwindCSS</span> .</p>
+      <a href="https://kayy-gamma.vercel.app/" target="self" class="border border-blue-900 rounded-[12px] py-1 bg-white/60 text-blue-800 text-[20px] flex justify-center"> <button class="">Live Link</button></a>
+    </div>
 
-       <!-- <div class="rounded-[5px] border border-blue-900 bg-gray-950 flex flex-col gap-2 justify-center flex-shrink-0 w-[96%] h-[22.2em] lg:w-[50%] lg:h-[23.5em]" data-aos="fade-up" data-aos-duration="1200">
-        <img class="object-fill rounded-[5px]" src="/images/kay.png" alt="">
-         <p class="px-2 font-[500]"><span class="font-bold text-[20px]">KayyVerse Socials</span> is a responsive website designed to showcase professional virtual assistance services. It highlights core offerings such as administrative support, scheduling, and digital organization. Built with <span class="font-bold">HTML, CSS, JavaScript, and TailwindCSS</span> .</p>
-         <button class="border border-blue-900 rounded-[12px] py-1 bg-white/60 text-blue-800 text-[20px]"><a href="https://kayy-gamma.vercel.app/">Live Link</a></button>
-      </div> -->
+  <div class="rounded-[5px] border border-blue-900 bg-gray-950 flex flex-col gap-2 justify-center flex-shrink-0 w-[96%] h-[23em] lg:w-[50%]" data-aos="fade-up">
+    <img class="h-[12em] w-full object-cover rounded-[5px]" src="/images/blog.png" alt="">
+    <p class="px-2 font-[500]"><span class="font-bold text-[20px]">Blog Website</span> A modern blogging platform built to deliver fast, clean, and engaging content. Designed with a responsive UI, smooth navigation,it focuses on delivering well-researched content that informs and optimized performance so readers can enjoy stories across any device.</p>
+    <a href="https://blog-8c82.vercel.app/index.html" target="self" class="border border-blue-900 rounded-[12px] py-1 bg-white/60 text-blue-800 text-[20px] flex justify-center"> <button class="">Live Link</button></a>
+  </div>
 
+  <div class="rounded-[5px] border border-blue-900 bg-gray-950 flex flex-col gap-2 justify-center flex-shrink-0 w-[96%] h-[23em] lg:w-[50%]" data-aos="fade-up">
+    <img class="h-[12em] w-full object-cover rounded-[5px]" src="/images/uniqlo.png" alt="">
+    <p class="px-2 font-[500]"><span class="font-bold text-[20px]">Uniqlo :</span> A responsive e-commerce website inspired by Uniqlo, designed for selling clothes with a clean and modern interface.Built with modern tech tools, it focuses on simplicity, smooth navigations, user-friendly and visual clarity.</p>
 
-       <div class="rounded-[5px] border border-blue-900 bg-gray-950 flex flex-col justify-center flex-shrink-0 lg:w-[50%] lg:h-[23.5em] w-[96%] h-[22.2em] gap-2" data-aos="fade-up" data-aos-duration="1200">
-        <img class="h-[12.2em] lg:h-[15em] object-fill rounded-[5px]" src="/images/uniqlo.png" alt="">
-         <p class="px-2 font-[500]"><span class="font-bold text-[20px]">Uniqlo :</span> A responsive e-commerce website inspired by Uniqlo, designed for selling clothes. It features a clean interface, product listings, and a smooth shopping experience built with modern frontend tools.</p>
-         <button class="border border-blue-900 rounded-[12px] py-1 bg-white/60 text-blue-800 text-[20px]"><a href="https://uniqlo-klitk9ak9-stephanie-chimdalus-projects.vercel.app/index.html">Live Link</a></button>
-      </div>
-      </div>
-      </div>
+    <a href="https://uniqlo-klitk9ak9-stephanie-chimdalus-projects.vercel.app/index.html" target="self" class="border border-blue-900 rounded-[12px] py-1 bg-white/60 text-blue-800 text-[20px] flex justify-center"> <button class="">Live Link</button></a>
+  </div>
 
-      <div id="contact" class="flex justify-center flex-col items-center gap-7 scroll-mt-24">
+</div>
+
+  <div id="contact" class="flex justify-center flex-col items-center gap-7 scroll-mt-24">
 
         <h3 class="text-[30px] text-blue-500">Let's connect</h3>
+         <form id="contactForm" action="https://formspree.io/f/xpwjvakr" method="POST" class="flex flex-col gap-5 p-3 items-center border-2 w-[80%] lg:w-[70%] rounded-[5px]">
 
-      <form id="theform" action="" class="flex flex-col gap-5 p-2 items-center border w-[80%] lg:w-[70%] rounded-[5px] z-[9999]" data-aos="zoom-out" data-aos-duration="1200" data-aos-delay="200">
+        <input id="name" name="name" class="border-2 py-[7px] px-[1em] placeholder:font-bold rounded-[5px] bg-transparent w-[100%] text-[14px]" type="text" placeholder="Name">
 
-           <input id="name" class="border py-[7px] px-[1em] placeholder:font-bold rounded-[5px] bg-transparent w-[100%] text-[14px]" type="name" name="name" placeholder="name" id="name">
+        <input id="email" name="email" class="border-2 py-[7px] px-[1em] placeholder:font-bold rounded-[6px] bg-transparent w-[100%] text-[14px]" type="email" placeholder="Email">
 
-           <input id="email" class="border py-[7px] px-[1em] placeholder:font-bold rounded-[6px] bg-transparent w-[100%] text-[14px]" type="email" name="email" placeholder="email" id="email">
+        <p id="checkEmail" class="text-red-600 text-[13px]"></p>
 
-           <p id="checkEmail" class="text-red-600 text-[13px]"></p>
+        <textarea id="message" name="message" class="border-2 py-[3px] rounded-[3px] bg-transparent w-full focus:outline-none resize-none px-4 py-3 placeholder:font-bold" rows="4" placeholder="Message"></textarea>
 
-           <textarea id="message" class="border py-[3px] rounded-[3px] bg-transparent w-full focus:outline-none resize-none px-4 py-3 placeholder:font-bold" rows="4" placeholder="message"></textarea>
+        <p id="successMessage" class="hidden text-green-600 text-[14px]">Message sent successfully!</p>
 
-         <button type="submit" id="send" class="border px-9 py-1 font-[400] font-sans rounded-[5px] w-[100%] relative hover:bg-blue-500 hover:text-white hover:border-white/30 transition-all duration-500 active:scale-90" title="connect">Send</button>
-          
-     </form>
+        <button type="submit" id="send" class="border-2 border-orange-900 px-9 py-1 font-[400] font-sans rounded-[5px] w-[100%] relative hover:bg-blue-500 hover:text-white hover:border-white/30 transition-all duration-500 active:scale-90">
+          Send
+        </button>
+      </form>
 
-     <div class="flex gap-[1em] lg:gap-[2em] items-center justify-end mt-[5em]">
+
+      
+      <div class="flex gap-[1em] lg:gap-[2em] items-center justify-end mt-[5em]">
         <a data-aos="fade-right" data-aos-duration="1000" href="https://www.facebook.com/profile.php?id=61561871405798">
         <i class="fa-brands fa-facebook text-blue-800 text-[40px] rounded-[5px] "></i>
               </a>
 
-        <a data-aos="fade-down" data-aos-duration="1000" href="https://www.instagram.com/chimdalu494/">
+        <a data-aos="fade-down" data-aos-duration="1000" href="https://www.instagram.com/code_with_steph/">
         <i class="fa-brands fa-instagram text-blue-800 text-[40px] rounded-[5px] "></i>
               </a>
                
@@ -317,18 +334,17 @@
         <p class="text-[12px] text-orange-700">Designed by stephanie chimdalu</p>
         <p class="text-[15px] text-orange-700">&#169 copyright 2025</p>
       </div>
+
       </div>
       </section>
-      </div>
-      </div>
-    </div>
-    </main>
+ 
+  </main>
 
-
-  <script src="./pages/index.js"></script>
+  <script src="./pages/script.js"></script>
+  <script src="./pages/contact.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    window.addEventListener('scroll', () => {
+     window.addEventListener('scroll', () => {
   AOS.refresh();
 });
     AOS.init({
@@ -337,5 +353,6 @@
       once: false
     });
   </script>
+
 </body>
 </html>
